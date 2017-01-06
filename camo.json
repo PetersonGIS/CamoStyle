@@ -1,0 +1,262 @@
+{
+  "version": 8,
+  "name": "Camo",
+  "metadata": {
+    "mapbox:autocomposite": false,
+    "mapbox:type": "template",
+    "openmaptiles:version": "3.x",
+    "maputnik:renderer": "mbgljs"
+  },
+  "center": [
+    8.54806714892635,
+    47.37180823552663
+  ],
+  "zoom": 12,
+  "bearing": 0,
+  "pitch": 0,
+  "sources": {
+    "openmaptiles": {
+      "type": "vector",
+      "url": "https://free.tilehosting.com/data/v3.json?key=tXiQqN3lIgskyDErJCeY"
+    },
+    "bonn_osm": {
+      "type": "vector",
+      "url": "http://tegola.cfapps.io/capabilities/bonn_osm.json"
+    }
+  },
+  "glyphs": "https://fonts.openmaptiles.org/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "rgba(98, 117, 98, 1)"
+      }
+    },
+    {
+      "id": "bonn_residential",
+      "type": "fill",
+      "source": "bonn_osm",
+      "source-layer": "residential",
+      "paint": {
+        "fill-color": "rgba(153, 195, 150, 0.2)"
+      }
+    },
+    {
+      "id": "bonn_military",
+      "type": "fill",
+      "source": "bonn_osm",
+      "source-layer": "military",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "rgba(255, 255, 255, 0.35)",
+        "fill-outline-color": "rgba(64, 63, 63, 1)"
+      }
+    },
+    {
+      "id": "bonn_building",
+      "type": "fill",
+      "source": "bonn_osm",
+      "source-layer": "building",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "rgba(58, 58, 33, 0.3)",
+        "fill-outline-color": "rgba(105, 105, 80, 0.51)",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "bonn_river",
+      "type": "line",
+      "source": "bonn_osm",
+      "source-layer": "river",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-pattern": "",
+        "line-blur": 0
+      }
+    },
+    {
+      "id": "bonn_lakes",
+      "type": "fill",
+      "source": "bonn_osm",
+      "source-layer": "lakes",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "rgba(69, 86, 71, 1)"
+      }
+    },
+    {
+      "id": "bonn_road",
+      "type": "line",
+      "source": "bonn_osm",
+      "source-layer": "road",
+      "paint": {
+        "line-color": "rgba(142, 154, 142, 0.7)",
+        "line-width": {
+          "stops": [
+            [
+              6,
+              0
+            ],
+            [
+              13,
+              0
+            ],
+            [
+              15,
+              4
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-offset": 0
+      }
+    },
+    {
+      "id": "bonn_roadlabel",
+      "type": "symbol",
+      "source": "bonn_osm",
+      "source-layer": "road",
+      "layout": {
+        "text-field": "{name}",
+        "text-font": [
+          "Open Sans Regular"
+        ],
+        "symbol-placement": "line",
+        "text-size": {
+          "stops": [
+            [
+              6,
+              0
+            ],
+            [
+              13,
+              0
+            ],
+            [
+              14,
+              8
+            ],
+            [
+              15,
+              14
+            ]
+          ]
+        },
+        "icon-allow-overlap": true,
+        "icon-optional": false,
+        "text-line-height": 1.2,
+        "visibility": "visible",
+        "text-ignore-placement": false
+      },
+      "paint": {
+        "text-halo-color": "rgba(98, 117, 98, 1)",
+        "text-halo-width": 1,
+        "text-color": "rgba(45, 41, 32, 1)"
+      }
+    },
+    {
+      "id": "bonn_mainroads",
+      "type": "line",
+      "source": "bonn_osm",
+      "source-layer": "main_roads",
+      "paint": {
+        "line-color": "rgba(142, 154, 142, 0.8)",
+        "line-width": 5,
+        "line-offset": 0
+      }
+    },
+    {
+      "id": "bonn_buildingextrude",
+      "type": "fill-extrusion",
+      "source": "bonn_osm",
+      "source-layer": "building",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-extrusion-height": 20,
+        "fill-extrusion-base": 0,
+        "fill-extrusion-opacity": 0.5,
+        "fill-extrusion-color": "rgba(58, 58, 33, .3)"
+      }
+    },
+    {
+      "id": "bonn_grassland",
+      "type": "fill",
+      "source": "bonn_osm",
+      "source-layer": "grassland",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "rgba(62, 195, 6, 0.15)"
+      }
+    },
+    {
+      "id": "bonn_forest",
+      "type": "fill",
+      "source": "bonn_osm",
+      "source-layer": "forest",
+      "paint": {
+        "fill-color": "rgba(100, 179, 100, 0.09)"
+      }
+    },
+    {
+      "id": "bonn_farms",
+      "type": "fill",
+      "source": "bonn_osm",
+      "source-layer": "farms",
+      "layout": {},
+      "paint": {
+        "fill-color": "rgba(189, 130, 88, 0.13)"
+      }
+    },
+    {
+      "id": "bonn_aeirodromespolygon",
+      "type": "fill",
+      "source": "bonn_osm",
+      "source-layer": "aerodromes_polygon",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "rgba(97, 96, 96, 1)"
+      }
+    },
+    {
+      "id": "bonn_medicalpolygon",
+      "type": "fill",
+      "source": "bonn_osm",
+      "source-layer": "medical_polygon",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "rgba(189, 67, 67, 0.2)",
+        "fill-outline-color": "rgba(218, 208, 208, 0.17)"
+      }
+    },
+    {
+      "id": "bonn_schools",
+      "type": "fill",
+      "source": "bonn_osm",
+      "source-layer": "schools_polygon",
+      "paint": {
+        "fill-color": "rgba(120, 39, 31, 0.16)",
+        "fill-outline-color": "rgba(113, 112, 144, 0.36)"
+      }
+    }
+  ],
+  "created": "2017-01-04T21:12:33.904Z",
+  "id": "f0usgx9v5"
+}
