@@ -8,10 +8,10 @@
     "maputnik:renderer": "mbgljs"
   },
   "center": [
-    8.54806714892635,
-    47.37180823552663
+    7.1119,
+    50.7377
   ],
-  "zoom": 12,
+  "zoom": 11.5,
   "bearing": 0,
   "pitch": 0,
   "sources": {
