@@ -26,6 +26,9 @@
     {
       "id": "background",
       "type": "background",
+      "layout": {
+        "visibility": "visible"
+      },
       "paint": {
         "background-color": "rgba(98, 117, 98, 1)"
       }
@@ -35,6 +38,9 @@
       "type": "fill",
       "source": "bonn_osm",
       "source-layer": "residential",
+      "layout": {
+        "visibility": "visible"
+      },
       "paint": {
         "fill-color": "rgba(153, 195, 150, 0.2)"
       }
@@ -96,6 +102,9 @@
       "type": "line",
       "source": "bonn_osm",
       "source-layer": "road",
+      "layout": {
+        "visibility": "visible"
+      },
       "paint": {
         "line-color": "rgba(142, 154, 142, 0.7)",
         "line-width": {
@@ -166,6 +175,9 @@
       "type": "line",
       "source": "bonn_osm",
       "source-layer": "main_roads",
+      "layout": {
+        "visibility": "visible"
+      },
       "paint": {
         "line-color": "rgba(142, 154, 142, 0.8)",
         "line-width": {
@@ -197,7 +209,7 @@
       "source": "bonn_osm",
       "source-layer": "building",
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "fill-extrusion-height": 20,
@@ -223,6 +235,9 @@
       "type": "fill",
       "source": "bonn_osm",
       "source-layer": "forest",
+      "layout": {
+        "visibility": "visible"
+      },
       "paint": {
         "fill-color": "rgba(100, 179, 100, 0.09)"
       }
@@ -232,7 +247,9 @@
       "type": "fill",
       "source": "bonn_osm",
       "source-layer": "farms",
-      "layout": {},
+      "layout": {
+        "visibility": "visible"
+      },
       "paint": {
         "fill-color": "rgba(189, 130, 88, 0.13)"
       }
@@ -269,75 +286,16 @@
       }
     },
     {
-      "id": "bonn_medicalpolygon-copy",
-      "type": "fill",
-      "source": "bonn_osm",
-      "source-layer": "medical_polygon",
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "fill-color": "rgba(189, 67, 67, 0.2)",
-        "fill-outline-color": "rgba(218, 208, 208, 0.17)"
-      }
-    },
-    {
-      "id": "medicons",
-      "type": "symbol",
-      "source": "bonn_osm",
-      "source-layer": "medical_polygon",
-      "filter": [
-        "all",
-        [
-          "==",
-          "name",
-          "St. Josef-Hospital"
-        ]
-      ],
-      "layout": {
-        "text-font": [
-          "Open Sans Italic",
-          "Open Sans Bold",
-          "Open Sans Extra Bold"
-        ],
-        "text-size": 14,
-        "text-field": "{name}",
-        "text-max-width": 5,
-        "text-rotation-alignment": "map",
-        "symbol-placement": "point",
-        "symbol-spacing": 10,
-        "text-letter-spacing": 0.2,
-        "text-padding": 2
-      },
-      "paint": {
-        "text-color": "rgba(4, 11, 19, 1)",
-        "text-halo-width": 1.5,
-        "text-halo-color": "rgba(255,255,255,0.7)"
-      }
-    },
-    {
       "id": "bonn_schools",
       "type": "fill",
       "source": "bonn_osm",
       "source-layer": "schools_polygon",
+      "layout": {
+        "visibility": "visible"
+      },
       "paint": {
         "fill-color": "rgba(120, 39, 31, 0.16)",
         "fill-outline-color": "rgba(113, 112, 144, 0.36)"
-      }
-    },
-    {
-      "id": "try10",
-      "type": "symbol",
-      "source": "bonn_osm",
-      "source-layer": "medical_polygon",
-      "layout": {
-        "text-font": [
-          "Open Sans Bold"
-        ],
-        "symbol-placement": "point"
-      },
-      "paint": {
-        "text-color": "rgba(27, 12, 12, 1)"
       }
     }
   ],
