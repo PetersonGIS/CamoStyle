@@ -171,7 +171,26 @@
       "source-layer": "main_roads",
       "paint": {
         "line-color": "rgba(142, 154, 142, 0.8)",
-        "line-width": 5,
+        "line-width": {
+          "stops": [
+            [
+              1,
+              0
+            ],
+            [
+              11,
+              0
+            ],
+            [
+              12,
+              3
+            ],
+            [
+              13,
+              5
+            ]
+          ]
+        },
         "line-offset": 0
       }
     },
