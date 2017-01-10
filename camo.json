@@ -63,6 +63,14 @@
       "type": "fill",
       "source": "bonn_osm",
       "source-layer": "building",
+      "filter": [
+        "all",
+        [
+          "==",
+          "amenity",
+          "school"
+        ]
+      ],
       "layout": {
         "visibility": "visible"
       },
@@ -132,6 +140,14 @@
       "type": "line",
       "source": "bonn_osm",
       "source-layer": "main_roads",
+      "filter": [
+        "all",
+        [
+          "==",
+          "name",
+          ""
+        ]
+      ],
       "layout": {
         "visibility": "visible"
       },
@@ -165,12 +181,15 @@
       "type": "fill-extrusion",
       "source": "bonn_osm",
       "source-layer": "building",
+      "filter": [
+        "all"
+      ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "fill-extrusion-height": 20,
-        "fill-extrusion-base": 0,
+        "fill-extrusion-base": 10,
         "fill-extrusion-opacity": 0.5,
         "fill-extrusion-color": "rgba(58, 58, 33, .3)"
       }
@@ -230,9 +249,7 @@
       "source": "bonn_osm",
       "source-layer": "medical_polygon",
       "filter": [
-        "==",
-        "$type",
-        "Point"
+        "all"
       ],
       "layout": {
         "visibility": "visible"
