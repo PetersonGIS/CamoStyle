@@ -79,19 +79,6 @@
       }
     },
     {
-      "id": "bonn_river",
-      "type": "line",
-      "source": "bonn_osm",
-      "source-layer": "river",
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "line-pattern": "",
-        "line-blur": 0
-      }
-    },
-    {
       "id": "bonn_lakes",
       "type": "fill",
       "source": "bonn_osm",
@@ -247,7 +234,9 @@
         ]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "visible",
+        "line-cap": "butt",
+        "line-join": "miter"
       },
       "paint": {
         "line-color": "rgba(150, 154, 142, .8)",
