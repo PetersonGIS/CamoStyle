@@ -109,7 +109,7 @@
       "source": "bonn_osm",
       "source-layer": "road",
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "rgba(142, 154, 142, 0.7)",
@@ -311,7 +311,7 @@
       }
     },
     {
-      "id": "bonn_aeirodromespolygon",
+      "id": "bonn_aerodromespolygon",
       "type": "fill",
       "source": "bonn_osm",
       "source-layer": "aerodromes_polygon",
