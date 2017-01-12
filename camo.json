@@ -38,6 +38,9 @@
       "type": "fill",
       "source": "bonn_osm",
       "source-layer": "residential",
+      "filter": [
+        "all"
+      ],
       "layout": {
         "visibility": "visible"
       },
@@ -63,6 +66,9 @@
       "type": "fill",
       "source": "bonn_osm",
       "source-layer": "building",
+      "filter": [
+        "all"
+      ],
       "layout": {
         "visibility": "visible"
       },
@@ -103,7 +109,7 @@
       "source": "bonn_osm",
       "source-layer": "road",
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "rgba(142, 154, 142, 0.7)",
@@ -128,7 +134,7 @@
       }
     },
     {
-      "id": "bonn_mainroads",
+      "id": "bonn_mainroads_trunk",
       "type": "line",
       "source": "bonn_osm",
       "source-layer": "main_roads",
@@ -136,8 +142,49 @@
         "all",
         [
           "==",
-          "name",
-          ""
+          "highway",
+          "trunk"
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "rgba(142, 154, 142, 0.7)",
+        "line-width": {
+          "stops": [
+            [
+              1,
+              0
+            ],
+            [
+              11,
+              0
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              13,
+              4
+            ]
+          ]
+        },
+        "line-offset": 0
+      }
+    },
+    {
+      "id": "bonn_mainroads_primary",
+      "type": "line",
+      "source": "bonn_osm",
+      "source-layer": "main_roads",
+      "filter": [
+        "all",
+        [
+          "==",
+          "highway",
+          "primary"
         ]
       ],
       "layout": {
@@ -169,6 +216,47 @@
       }
     },
     {
+      "id": "bonn_mainroads_motorway",
+      "type": "line",
+      "source": "bonn_osm",
+      "source-layer": "main_roads",
+      "filter": [
+        "all",
+        [
+          "==",
+          "highway",
+          "motorway"
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "rgba(216, 203, 196, 0.7)",
+        "line-width": {
+          "stops": [
+            [
+              1,
+              0
+            ],
+            [
+              11,
+              0
+            ],
+            [
+              12,
+              4
+            ],
+            [
+              13,
+              6
+            ]
+          ]
+        },
+        "line-offset": 0
+      }
+    },
+    {
       "id": "bonn_buildingextrude",
       "type": "fill-extrusion",
       "source": "bonn_osm",
@@ -177,7 +265,7 @@
         "all"
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "fill-extrusion-height": 20,
