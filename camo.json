@@ -108,6 +108,24 @@
       "type": "line",
       "source": "bonn_osm",
       "source-layer": "road",
+      "filter": [
+        "none",
+        [
+          "==",
+          "highway",
+          "trunk"
+        ],
+        [
+          "==",
+          "highway",
+          "primary"
+        ],
+        [
+          "==",
+          "highway",
+          "motorway"
+        ]
+      ],
       "layout": {
         "visibility": "visible"
       },
@@ -150,7 +168,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "rgba(142, 154, 142, 0.7)",
+        "line-color": "rgba(142, 154, 142, 0.6)",
         "line-width": {
           "stops": [
             [
@@ -191,7 +209,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "rgba(142, 154, 142, 0.8)",
+        "line-color": "rgba(142, 154, 142, 0.7)",
         "line-width": {
           "stops": [
             [
@@ -232,7 +250,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "rgba(216, 203, 196, 0.7)",
+        "line-color": "rgba(150, 154, 142, .8)",
         "line-width": {
           "stops": [
             [
@@ -245,11 +263,11 @@
             ],
             [
               12,
-              4
+              3.5
             ],
             [
               13,
-              6
+              5.5
             ]
           ]
         },
