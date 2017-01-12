@@ -63,14 +63,6 @@
       "type": "fill",
       "source": "bonn_osm",
       "source-layer": "building",
-      "filter": [
-        "all",
-        [
-          "==",
-          "amenity",
-          "school"
-        ]
-      ],
       "layout": {
         "visibility": "visible"
       },
