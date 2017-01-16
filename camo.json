@@ -26,6 +26,10 @@
     {
       "id": "background",
       "type": "background",
+      "maxzoom": 24,
+      "filter": [
+        "all"
+      ],
       "layout": {
         "visibility": "visible"
       },
@@ -66,6 +70,8 @@
       "type": "fill",
       "source": "bonn_osm",
       "source-layer": "building",
+      "minzoom": 0,
+      "maxzoom": 24,
       "filter": [
         "all"
       ],
@@ -264,10 +270,12 @@
       }
     },
     {
-      "id": "bonn_buildingextrude",
+      "id": "bonn_bldg_3d",
       "type": "fill-extrusion",
       "source": "bonn_osm",
       "source-layer": "building",
+      "minzoom": 0,
+      "maxzoom": 24,
       "filter": [
         "all"
       ],
@@ -275,10 +283,13 @@
         "visibility": "none"
       },
       "paint": {
-        "fill-extrusion-height": 20,
-        "fill-extrusion-base": 10,
-        "fill-extrusion-opacity": 0.5,
-        "fill-extrusion-color": "rgba(58, 58, 33, .3)"
+        "fill-extrusion-color": "rgba(58, 58, 33, .3)",
+        "fill-extrusion-height": {
+          "property": "height",
+          "type": "identity"
+        },
+        "fill-extrusion-base": 5,
+        "fill-extrusion-opacity": 0.5
       }
     },
     {
