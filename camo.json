@@ -288,7 +288,18 @@
           "property": "height",
           "type": "identity"
         },
-        "fill-extrusion-base": 5,
+        "fill-extrusion-base": {
+          "stops": [
+            [
+              13,
+              5
+            ],
+            [
+              20,
+              10
+            ]
+          ]
+        },
         "fill-extrusion-opacity": 0.5
       }
     },
