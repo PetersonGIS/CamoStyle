@@ -425,6 +425,62 @@
         "text-halo-width": 1,
         "text-color": "rgba(45, 41, 32, 1)"
       }
+    },
+    {
+      "id": "road_sheild",
+      "type": "symbol",
+      "source": "bonn_osm",
+      "source-layer": "road",
+      "filter": [
+        "all",
+        [
+          "==",
+          "highway",
+          "motorway"
+        ]
+      ],
+      "layout": {
+        "text-field": "{ref}",
+        "text-font": [
+          "Open Sans Regular"
+        ],
+        "symbol-placement": "line",
+        "text-size": {
+          "stops": [
+            [
+              14,
+              11
+            ],
+            [
+              15,
+              16
+            ]
+          ]
+        },
+        "icon-allow-overlap": true,
+        "icon-optional": true,
+        "text-line-height": 1.2,
+        "visibility": "visible",
+        "text-ignore-placement": false,
+        "icon-image": "camoshield6",
+        "text-rotation-alignment": "viewport",
+        "icon-rotation-alignment": "viewport",
+        "icon-size": 1,
+        "icon-text-fit": "none",
+        "icon-text-fit-padding": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "text-max-width": 1
+      },
+      "paint": {
+        "text-color": "#333",
+        "icon-color": "rgba(158, 22, 22, 1)",
+        "icon-halo-color": "rgba(199, 63, 63, 1)",
+        "icon-opacity": 1
+      }
     }
   ],
   "created": "2017-01-04T21:12:33.904Z",
