@@ -21,6 +21,7 @@
       "url": "http://tegola.cfapps.io/capabilities/bonn_osm.json"
     }
   },
+  "sprite": "https://petersongis.github.io/Mobility/Spritesheets",
   "glyphs": "https://fonts.openmaptiles.org/{fontstack}/{range}.pbf",
   "layers": [
     {
@@ -93,7 +94,8 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "rgba(69, 86, 71, 1)"
+        "fill-color": "rgba(69, 86, 71, 1)",
+        "fill-pattern": "waves"
       }
     },
     {
@@ -426,5 +428,6 @@
     }
   ],
   "created": "2017-01-04T21:12:33.904Z",
-  "id": "f0usgx9v5"
+  "id": "f0usgx9v5",
+  "owner": ""
 }
