@@ -1,6 +1,7 @@
 # CamoStyle
 This is a draft sample style for use w/ Tegola/Maputnik.
 
+- [View the style as an OpenLayers map in the browser](http://htmlpreview.github.io/?https://github.com/PetersonGIS/CamoStyle/blob/master/live-map.html) (note that text and tilt are not currently functioning)
 - Toggle on visibility of bonn_bldg_3d data layer for tilt viewing
 - Will we want a url for our own sprites and fonts/glyphs?
 - Clipping issues at zoom 15 & higher to be fixed soon
