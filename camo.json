@@ -125,7 +125,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "rgba(142, 154, 142, 0.7)",
+        "line-color": "rgba(140, 152, 140, 1)",
         "line-width": {
           "stops": [
             [
@@ -138,7 +138,7 @@
             ],
             [
               15,
-              4
+              3
             ]
           ]
         },
@@ -163,7 +163,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "rgba(142, 154, 142, 0.6)",
+        "line-color": "rgba(140, 152, 140, 1)",
         "line-width": {
           "stops": [
             [
@@ -204,7 +204,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "rgba(142, 154, 142, 0.7)",
+        "line-color": "rgba(140, 152, 140, 1)",
         "line-width": {
           "stops": [
             [
@@ -247,7 +247,7 @@
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(150, 154, 142, .8)",
+        "line-color": "rgba(150, 154, 142, 1)",
         "line-width": {
           "stops": [
             [
