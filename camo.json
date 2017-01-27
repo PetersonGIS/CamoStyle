@@ -39,7 +39,7 @@
       }
     },
     {
-      "id": "bonn_residential",
+      "id": "residential",
       "type": "fill",
       "source": "bonn_osm",
       "source-layer": "residential",
@@ -54,7 +54,7 @@
       }
     },
     {
-      "id": "bonn_military",
+      "id": "military",
       "type": "fill",
       "source": "bonn_osm",
       "source-layer": "military",
@@ -67,7 +67,7 @@
       }
     },
     {
-      "id": "bonn_building",
+      "id": "building_flat",
       "type": "fill",
       "source": "bonn_osm",
       "source-layer": "building",
@@ -86,10 +86,45 @@
       }
     },
     {
-      "id": "bonn_lakes",
+      "id": "building_tilt",
+      "type": "fill-extrusion",
+      "source": "bonn_osm",
+      "source-layer": "building",
+      "minzoom": 0,
+      "maxzoom": 24,
+      "filter": [
+        "all"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-extrusion-color": "rgba(58, 58, 33, .3)",
+        "fill-extrusion-height": {
+          "property": "height",
+          "type": "identity"
+        },
+        "fill-extrusion-base": {
+          "stops": [
+            [
+              13,
+              5
+            ],
+            [
+              20,
+              10
+            ]
+          ]
+        },
+        "fill-extrusion-opacity": 0.5
+      }
+    },
+    {
+      "id": "lake",
       "type": "fill",
       "source": "bonn_osm",
       "source-layer": "lakes",
+      "minzoom": 0,
       "layout": {
         "visibility": "visible"
       },
@@ -99,10 +134,11 @@
       }
     },
     {
-      "id": "bonn_road",
+      "id": "road_minor",
       "type": "line",
       "source": "bonn_osm",
       "source-layer": "road",
+      "minzoom": 0,
       "filter": [
         "none",
         [
@@ -147,10 +183,11 @@
       }
     },
     {
-      "id": "bonn_mainroads_trunk",
+      "id": "road_trunk",
       "type": "line",
       "source": "bonn_osm",
       "source-layer": "main_roads",
+      "minzoom": 0,
       "filter": [
         "all",
         [
@@ -188,10 +225,11 @@
       }
     },
     {
-      "id": "bonn_mainroads_primary",
+      "id": "road_primary",
       "type": "line",
       "source": "bonn_osm",
       "source-layer": "main_roads",
+      "minzoom": 0,
       "filter": [
         "all",
         [
@@ -229,10 +267,11 @@
       }
     },
     {
-      "id": "bonn_mainroads_motorway",
+      "id": "road_motorway",
       "type": "line",
       "source": "bonn_osm",
       "source-layer": "main_roads",
+      "minzoom": 0,
       "filter": [
         "all",
         [
@@ -272,41 +311,7 @@
       }
     },
     {
-      "id": "bonn_bldg_3d",
-      "type": "fill-extrusion",
-      "source": "bonn_osm",
-      "source-layer": "building",
-      "minzoom": 0,
-      "maxzoom": 24,
-      "filter": [
-        "all"
-      ],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "fill-extrusion-color": "rgba(58, 58, 33, .3)",
-        "fill-extrusion-height": {
-          "property": "height",
-          "type": "identity"
-        },
-        "fill-extrusion-base": {
-          "stops": [
-            [
-              13,
-              5
-            ],
-            [
-              20,
-              10
-            ]
-          ]
-        },
-        "fill-extrusion-opacity": 0.5
-      }
-    },
-    {
-      "id": "bonn_grassland",
+      "id": "grassland",
       "type": "fill",
       "source": "bonn_osm",
       "source-layer": "grassland",
@@ -318,7 +323,7 @@
       }
     },
     {
-      "id": "bonn_forest",
+      "id": "forest",
       "type": "fill",
       "source": "bonn_osm",
       "source-layer": "forest",
@@ -330,10 +335,11 @@
       }
     },
     {
-      "id": "bonn_farms",
+      "id": "farm",
       "type": "fill",
       "source": "bonn_osm",
       "source-layer": "farms",
+      "minzoom": 0,
       "layout": {
         "visibility": "visible"
       },
@@ -342,7 +348,7 @@
       }
     },
     {
-      "id": "bonn_aerodromespolygon",
+      "id": "airport",
       "type": "fill",
       "source": "bonn_osm",
       "source-layer": "aerodromes_polygon",
@@ -355,10 +361,11 @@
       }
     },
     {
-      "id": "bonn_medicalpolygon",
+      "id": "medical",
       "type": "fill",
       "source": "bonn_osm",
       "source-layer": "medical_polygon",
+      "minzoom": 0,
       "filter": [
         "all"
       ],
@@ -371,10 +378,11 @@
       }
     },
     {
-      "id": "bonn_schools",
+      "id": "school",
       "type": "fill",
       "source": "bonn_osm",
       "source-layer": "schools_polygon",
+      "minzoom": 0,
       "layout": {
         "visibility": "visible"
       },
@@ -384,10 +392,11 @@
       }
     },
     {
-      "id": "bonn_roadlabel",
+      "id": "roadlabel_text",
       "type": "symbol",
       "source": "bonn_osm",
       "source-layer": "road",
+      "minzoom": 0,
       "layout": {
         "text-field": "{name}",
         "text-font": [
@@ -427,10 +436,11 @@
       }
     },
     {
-      "id": "road_sheild",
+      "id": "roadlabel_sheild",
       "type": "symbol",
       "source": "bonn_osm",
       "source-layer": "road",
+      "minzoom": 0,
       "filter": [
         "all",
         [
