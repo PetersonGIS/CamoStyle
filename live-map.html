@@ -43,7 +43,7 @@
     })
   });
 
-  fetch('https://rawgit.com/PetersonGIS/CamoStyle/master/camo.json').then(function(response) {
+  fetch('https://rawgit.com/PetersonGIS/CamoStyle/master/camo3d.json').then(function(response) {
     response.json().then(function(glStyle) {
       olms.applyBackground(map, glStyle);
       olms.applyStyle(layer, glStyle, 'bonn_osm').then(function() {
