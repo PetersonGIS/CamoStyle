@@ -8,7 +8,7 @@
     "maputnik:renderer": "mbgljs",
     "inspect": true
   },
-  "center": [
+ "center": [
     7.1434,
     50.7338
   ],
@@ -67,59 +67,6 @@
       }
     },
     {
-      "id": "building_flat",
-      "type": "fill",
-      "source": "bonn_osm",
-      "source-layer": "building",
-      "minzoom": 0,
-      "maxzoom": 24,
-      "filter": [
-        "all"
-      ],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "fill-color": "rgba(58, 58, 33, 0.3)",
-        "fill-outline-color": "rgba(105, 105, 80, 0.51)",
-        "fill-opacity": 1
-      }
-    },
-    {
-      "id": "building_tilt",
-      "type": "fill-extrusion",
-      "source": "bonn_osm",
-      "source-layer": "building",
-      "minzoom": 0,
-      "maxzoom": 24,
-      "filter": [
-        "all"
-      ],
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "fill-extrusion-color": "rgba(58, 58, 33, .3)",
-        "fill-extrusion-height": {
-          "property": "height",
-          "type": "identity"
-        },
-        "fill-extrusion-base": {
-          "stops": [
-            [
-              13,
-              5
-            ],
-            [
-              20,
-              10
-            ]
-          ]
-        },
-        "fill-extrusion-opacity": 0.5
-      }
-    },
-    {
       "id": "lake",
       "type": "fill",
       "source": "bonn_osm",
@@ -129,8 +76,9 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "rgba(69, 86, 71, 1)",
-        "fill-pattern": "waves"
+        "fill-color": "rgba(69, 86, 71, .5)",
+        "fill-pattern": "waves",
+        "fill-opacity": 1
       }
     },
     {
@@ -389,6 +337,40 @@
       "paint": {
         "fill-color": "rgba(120, 39, 31, 0.16)",
         "fill-outline-color": "rgba(113, 112, 144, 0.36)"
+      }
+    },
+    {
+      "id": "building_tilt",
+      "type": "fill-extrusion",
+      "source": "bonn_osm",
+      "source-layer": "building",
+      "minzoom": 0,
+      "maxzoom": 24,
+      "filter": [
+        "all"
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-extrusion-color": "rgba(60, 60, 43, 1)",
+        "fill-extrusion-height": {
+          "property": "height",
+          "type": "identity"
+        },
+        "fill-extrusion-base": {
+          "stops": [
+            [
+              13,
+              5
+            ],
+            [
+              20,
+              10
+            ]
+          ]
+        },
+        "fill-extrusion-opacity": 0.8
       }
     },
     {
