@@ -340,39 +340,385 @@
       }
     },
     {
-      "id": "building_tilt",
-      "type": "fill-extrusion",
-      "source": "bonn_osm",
-      "source-layer": "building",
-      "minzoom": 0,
-      "maxzoom": 24,
-      "filter": [
-        "all"
-      ],
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "fill-extrusion-color": "rgba(60, 60, 43, 1)",
-        "fill-extrusion-height": {
-          "property": "height",
-          "type": "identity"
-        },
-        "fill-extrusion-base": {
-          "stops": [
-            [
-              13,
-              5
-            ],
-            [
-              20,
-              10
-            ]
-          ]
-        },
-        "fill-extrusion-opacity": 0.8
-      }
-    },
+	  "id": "building_tilt_na",
+	  "type": "fill-extrusion",
+	  "source": "bonn_osm",
+	  "source-layer": "building",
+	  "minzoom": 0,
+	  "maxzoom": 24,
+	  "filter": [
+		"all"
+	  ],
+	  "layout": {
+		"visibility": "visible"
+	  },
+	  "paint": {
+		"fill-extrusion-color": "rgba(60, 60, 43, 1)",
+		"fill-extrusion-height": 5,
+		"fill-extrusion-base": 1,
+		"fill-extrusion-opacity": 0.8
+	  }
+	},
+    {
+	  "id": "building_tilt_1",
+	  "type": "fill-extrusion",
+	  "source": "bonn_osm",
+	  "source-layer": "building",
+	  "minzoom": 0,
+	  "maxzoom": 24,
+	  "filter": [
+		"any",
+		[
+		  "==",
+		  "building:levels",
+		  "1"
+		]
+	  ],
+	  "layout": {
+		"visibility": "visible"
+	  },
+	  "paint": {
+		"fill-extrusion-color": "rgba(60, 60, 43, 1)",
+		"fill-extrusion-height": 5,
+		"fill-extrusion-base": 1,
+		"fill-extrusion-opacity": 0.8
+	  }
+	},
+	{
+	  "id": "building_tilt_2",
+	  "type": "fill-extrusion",
+	  "source": "bonn_osm",
+	  "source-layer": "building",
+	  "minzoom": 0,
+	  "maxzoom": 24,
+	  "filter": [
+		"any",
+		[
+		  "==",
+		  "building:levels",
+		  "2"
+		]
+	  ],
+	  "layout": {
+		"visibility": "visible"
+	  },
+	  "paint": {
+		"fill-extrusion-color": "rgba(60, 60, 43, 1)",
+		"fill-extrusion-height": 10,
+		"fill-extrusion-base": 1,
+		"fill-extrusion-opacity": 0.8
+	  }
+	},
+	{
+	  "id": "building_tilt_3",
+	  "type": "fill-extrusion",
+	  "source": "bonn_osm",
+	  "source-layer": "building",
+	  "minzoom": 0,
+	  "maxzoom": 24,
+	  "filter": [
+		"any",
+		[
+		  "==",
+		  "building:levels",
+		  "3"
+		]
+	  ],
+	  "layout": {
+		"visibility": "visible"
+	  },
+	  "paint": {
+		"fill-extrusion-color": "rgba(60, 60, 43, 1)",
+		"fill-extrusion-height": 12,
+		"fill-extrusion-base": 1,
+		"fill-extrusion-opacity": 0.8
+	  }
+	},
+	{
+	  "id": "building_tilt_4",
+	  "type": "fill-extrusion",
+	  "source": "bonn_osm",
+	  "source-layer": "building",
+	  "minzoom": 0,
+	  "maxzoom": 24,
+	  "filter": [
+		"any",
+		[
+		  "==",
+		  "building:levels",
+		  "4"
+		]
+	  ],
+	  "layout": {
+		"visibility": "visible"
+	  },
+	  "paint": {
+		"fill-extrusion-color": "rgba(60, 60, 43, 1)",
+		"fill-extrusion-height": 15,
+		"fill-extrusion-base": 1,
+		"fill-extrusion-opacity": 0.8
+	  }
+	},
+	{
+	  "id": "building_tilt_9",
+	  "type": "fill-extrusion",
+	  "source": "bonn_osm",
+	  "source-layer": "building",
+	  "minzoom": 0,
+	  "maxzoom": 24,
+	  "filter": [
+		"any",
+		[
+		  "==",
+		  "building:levels",
+		  "5"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "6"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "7"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "8"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "9"
+		]
+	  ],
+	  "layout": {
+		"visibility": "visible"
+	  },
+	  "paint": {
+		"fill-extrusion-color": "rgba(60, 60, 43, 1)",
+		"fill-extrusion-height": 25,
+		"fill-extrusion-base": 1,
+		"fill-extrusion-opacity": 0.8
+	  }
+	},
+	{
+	  "id": "building_tilt_19",
+	  "type": "fill-extrusion",
+	  "source": "bonn_osm",
+	  "source-layer": "building",
+	  "minzoom": 0,
+	  "maxzoom": 24,
+	  "filter": [
+		"any",
+		[
+		  "==",
+		  "building:levels",
+		  "10"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "11"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "12"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "13"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "14"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "15"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "16"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "17"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "18"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "19"
+		]
+	  ],
+	  "layout": {
+		"visibility": "visible"
+	  },
+	  "paint": {
+		"fill-extrusion-color": "rgba(60, 60, 43, 1)",
+		"fill-extrusion-height": 40,
+		"fill-extrusion-base": 1,
+		"fill-extrusion-opacity": 0.8
+	  }
+	},
+	{
+	  "id": "building_tilt_29",
+	  "type": "fill-extrusion",
+	  "source": "bonn_osm",
+	  "source-layer": "building",
+	  "minzoom": 0,
+	  "maxzoom": 24,
+	  "filter": [
+		"any",
+		[
+		  "==",
+		  "building:levels",
+		  "20"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "21"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "22"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "23"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "24"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "25"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "26"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "27"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "28"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "29"
+		]
+	  ],
+	  "layout": {
+		"visibility": "visible"
+	  },
+	  "paint": {
+		"fill-extrusion-color": "rgba(60, 60, 43, 1)",
+		"fill-extrusion-height": 90,
+		"fill-extrusion-base": 1,
+		"fill-extrusion-opacity": 0.8
+	  }
+	},
+	{
+	  "id": "building_tilt_40",
+	  "type": "fill-extrusion",
+	  "source": "bonn_osm",
+	  "source-layer": "building",
+	  "minzoom": 0,
+	  "maxzoom": 24,
+	  "filter": [
+		"any",
+		[
+		  "==",
+		  "building:levels",
+		  "30"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "31"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "32"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "33"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "34"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "35"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "36"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "37"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "38"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "39"
+		],
+		[
+		  "==",
+		  "building:levels",
+		  "40"
+		]
+	  ],
+	  "layout": {
+		"visibility": "visible"
+	  },
+	  "paint": {
+		"fill-extrusion-color": "rgba(60, 60, 43, 1)",
+		"fill-extrusion-height": 140,
+		"fill-extrusion-base": 1,
+		"fill-extrusion-opacity": 0.8
+	  }
+	},
     {
       "id": "roadlabel_text",
       "type": "symbol",
