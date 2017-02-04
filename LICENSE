@@ -1,3 +1,5 @@
+## Code, Design, Icons
+
 BSD 2-Clause License
 
 Copyright (c) 2017, PetersonGIS
@@ -23,3 +25,8 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+## Font
+
+CamoStyle uses the Open Sans font (Copyright 2010-2011 Google).
+Open Sans is licensed under the [Apache License, Version 2.0](https://github.com/google/fonts/blob/master/apache/opensans/LICENSE.txt).
