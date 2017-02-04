@@ -7,6 +7,8 @@ This is a draft sample style for use w/ Tegola/Maputnik.
 - The bonn_lakes data layer is missing a few pieces of the Rhine River
 - If Maputnik doesn't recenter for you, try #11.5/50.7377/7.1119
 
-<img width="600" src="Screenshot1.JPG" />
+## Map Design
 
-<img width="600" src="Screenshot2.JPG" />
+The CamoStyle basemap has a subdued color scheme to accomodate data overlays while being unique from other light basemap designs. Use camo.json for OpenLayers or mobile and camo3d.json for Mapbox implementations. Use either camo.json or camo3d.json in Maputnik for building your own style with this Tegola data extract of Bonn, Germany.
+
+[![Camo.json map demo in a mapbox renderer](demo.gif)](http://www.gretchenpeterson.com/live-map-mapbox.html#14.66/50.7173/7.1318/-52/60)
