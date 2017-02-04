@@ -4,9 +4,9 @@ This is a map style that uses a publically available [Tegola](https://github.com
 <img align="right" alt="TegolaCamoStyle" src="logo.png" />
 
 ## Viewing the map in the browser
-- [Rendered with OpenLayers](http://htmlpreview.github.io/?https://github.com/PetersonGIS/CamoStyle/blob/master/live-map.html) 
-  Note that the water texture, road labels and tilt functionality are missing from this map, which displays the camo.json style.
-- [Rendered with Mapbox](http://www.gretchenpeterson.com/live-map-mapbox.html#14.66/50.7173/7.1318/-52/60) 
+- [Rendered with OpenLayers:](http://htmlpreview.github.io/?https://github.com/PetersonGIS/CamoStyle/blob/master/live-map.html)
+Note that the water texture, road labels and tilt functionality are missing from this map, which displays the camo.json style.
+- [Rendered with Mapbox:](http://www.gretchenpeterson.com/live-map-mapbox.html#14.66/50.7173/7.1318/-52/60) 
   Note that the water texture, road labels, and tilt are working in this map, which displays the camo3d.json style. Test the tilt (pitch)   functionality by holding ctrl while clicking and dragging. The building extrusions are not yet functional on mobile devices.
 - At zooms 15 and higher the data begins to appear blocky, this is due to clipping issues in the source data that are in the process of    being fixed.
 - A piece of the Rhine River appears to be missing from the original data.
