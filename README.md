@@ -1,6 +1,8 @@
 # CamoStyle
 This is a draft sample style for use w/ Tegola/Maputnik.
 
+<img align="right" alt="TegolaCamoStyle" src="logo.png" />
+
 - [View the style as an OpenLayers map in the browser](http://htmlpreview.github.io/?https://github.com/PetersonGIS/CamoStyle/blob/master/live-map.html) (note that text and tilt are not currently functioning)
 - [View the style rendered with mapbox in the browser](http://www.gretchenpeterson.com/live-map-mapbox.html#14.66/50.7173/7.1318/-52/60) (sprites, text, and tilt working) Test the tilt (pitch) functionality by holding ctrl while clicking and dragging.
 - Clipping issues at zoom 15 & higher to be fixed soon
