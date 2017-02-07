@@ -347,8 +347,12 @@
 	  "minzoom": 0,
 	  "maxzoom": 24,
 	  "filter": [
-		"all"
-	  ],
+        "all",
+        [
+          "!has",
+          "building:levels"
+        ]
+      ],
 	  "layout": {
 		"visibility": "visible"
 	  },
