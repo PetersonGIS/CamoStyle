@@ -45,6 +45,9 @@
       "source-layer": "land_10-20",
       "minzoom": 10,
       "maxzoom": 20,
+      "layout": {
+        "visibility": "visible"
+      },
       "paint": {
         "fill-color": "rgba(98, 117, 98, 1)"
       }
@@ -299,6 +302,83 @@
       }
     },
     {
+      "id": "waterways",
+      "type": "line",
+      "source": "tegola-osm",
+      "source-layer": "waterways",
+      "minzoom": 15,
+      "maxzoom": 20,
+      "layout": {},
+      "paint": {
+        "line-color": "rgba(69, 86, 71, .5)"
+      }
+    },
+    {
+      "id": "waterways_gen1",
+      "type": "line",
+      "source": "tegola-osm",
+      "source-layer": "waterways_gen1",
+      "minzoom": 13,
+      "maxzoom": 15,
+      "layout": {},
+      "paint": {
+        "line-color": "rgba(69, 86, 71, .5)"
+      }
+    },
+    {
+      "id": "waterways_gen0",
+      "type": "line",
+      "source": "tegola-osm",
+      "source-layer": "waterways_gen0",
+      "minzoom": 8,
+      "maxzoom": 13,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "rgba(69, 86, 71, .5)"
+      }
+    },
+    {
+      "id": "waterareas",
+      "type": "fill",
+      "source": "tegola-osm",
+      "source-layer": "waterareas",
+      "minzoom": 13,
+      "maxzoom": 20,
+      "paint": {
+        "fill-color": "rgba(69, 86, 71, .5)",
+        "fill-pattern": "waves",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "waterareas_gen0",
+      "type": "fill",
+      "source": "tegola-osm",
+      "source-layer": "waterareas_gen0",
+      "minzoom": 3,
+      "maxzoom": 10,
+      "paint": {
+        "fill-color": "rgba(69, 86, 71, .5)",
+        "fill-pattern": "waves",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "waterareas_gen1",
+      "type": "fill",
+      "source": "tegola-osm",
+      "source-layer": "waterareas_gen1",
+      "minzoom": 10,
+      "maxzoom": 13,
+      "paint": {
+        "fill-color": "rgba(69, 86, 71, .5)",
+        "fill-pattern": "waves",
+        "fill-opacity": 1
+      }
+    },
+    {
       "id": "roads14_track",
       "type": "line",
       "source": "tegola-osm",
@@ -464,7 +544,9 @@
           "in",
           "type",
           "tertiary",
-          "unclassified"
+          "unclassified",
+		  "residential",
+		  "living_street"
         ],
         [
           "!=",
@@ -473,16 +555,16 @@
         ]
       ],
       "paint": {
-        "line-color": "rgba(140, 152, 140, 1)",
+        "line-color": "rgba(118, 125, 118, 1)",
         "line-width": {
           "stops": [
             [
               14,
-              3
+              1
             ],
             [
               18,
-              12
+              5
             ]
           ]
         }
@@ -864,130 +946,6 @@
       }
     },
     {
-      "id": "waterways",
-      "type": "line",
-      "source": "tegola-osm",
-      "source-layer": "waterways",
-      "minzoom": 15,
-      "maxzoom": 20,
-      "layout": {},
-      "paint": {
-        "line-color": "rgba(69, 86, 71, .5)"
-      }
-    },
-    {
-      "id": "waterways_gen1",
-      "type": "line",
-      "source": "tegola-osm",
-      "source-layer": "waterways_gen1",
-      "minzoom": 13,
-      "maxzoom": 15,
-      "layout": {},
-      "paint": {
-        "line-color": "rgba(69, 86, 71, .5)"
-      }
-    },
-    {
-      "id": "waterways_gen0",
-      "type": "line",
-      "source": "tegola-osm",
-      "source-layer": "waterways_gen0",
-      "minzoom": 8,
-      "maxzoom": 13,
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "line-color": "rgba(69, 86, 71, .5)"
-      }
-    },
-    {
-      "id": "waterareas",
-      "type": "fill",
-      "source": "tegola-osm",
-      "source-layer": "waterareas",
-      "minzoom": 13,
-      "maxzoom": 20,
-      "paint": {
-        "fill-color": "rgba(69, 86, 71, .5)",
-        "fill-pattern": "waves",
-        "fill-opacity": 1
-      }
-    },
-    {
-      "id": "waterareas_gen1",
-      "type": "fill",
-      "source": "tegola-osm",
-      "source-layer": "waterareas_gen1",
-      "minzoom": 10,
-      "maxzoom": 13,
-      "paint": {
-        "fill-color": "rgba(69, 86, 71, .5)",
-        "fill-pattern": "waves",
-        "fill-opacity": 1
-      }
-    },
-    {
-      "id": "waterareas_gen0",
-      "type": "fill",
-      "source": "tegola-osm",
-      "source-layer": "waterareas_gen0",
-      "minzoom": 3,
-      "maxzoom": 10,
-      "paint": {
-        "fill-color": "rgba(69, 86, 71, .5)",
-        "fill-pattern": "waves",
-        "fill-opacity": 1
-      }
-    },
-    {
-      "id": "roads_14_shields",
-      "type": "symbol",
-      "source": "tegola-osm",
-      "source-layer": "roads_14-20",
-      "minzoom": 14,
-      "maxzoom": 24,
-      "filter": [
-        "all",
-        [
-          "==",
-          "type",
-          "motorway"
-        ]
-      ],
-      "layout": {
-        "text-field": "{ref}",
-        "text-font": [
-          "Open Sans Regular"
-        ],
-        "symbol-placement": "line",
-        "text-size": {
-          "stops": [
-            [
-              14,
-              11
-            ],
-            [
-              15,
-              14
-            ]
-          ]
-        },
-        "icon-allow-overlap": true,
-        "icon-optional": false,
-        "text-line-height": 1.2,
-        "visibility": "visible",
-        "text-ignore-placement": false,
-        "icon-image": "camoshield6",
-        "icon-rotation-alignment": "viewport",
-        "text-rotation-alignment": "viewport",
-        "text-pitch-alignment": "viewport"
-      },
-      "paint": {
-        "text-color": "rgba(51, 51, 51, 1)"
-      }
-    },
-    {
       "id": "roads_14_labels",
       "type": "symbol",
       "source": "tegola-osm",
@@ -997,9 +955,10 @@
       "filter": [
         "all",
         [
-          "!=",
+          "!in",
           "type",
-          "motorway"
+          "motorway",
+          "subway"
         ]
       ],
       "layout": {
@@ -1077,6 +1036,61 @@
         },
         "fill-extrusion-base": 0,
         "fill-extrusion-opacity": 0.8
+      }
+    },
+    {
+      "id": "roads_14_shields",
+      "type": "symbol",
+      "source": "tegola-osm",
+      "source-layer": "roads_14-20",
+      "minzoom": 14,
+      "maxzoom": 24,
+      "filter": [
+        "all",
+        [
+          "==",
+          "type",
+          "motorway"
+        ]
+      ],
+      "layout": {
+        "text-field": "{ref}",
+        "text-font": [
+          "Open Sans Regular"
+        ],
+        "symbol-placement": "line",
+        "text-size": {
+          "stops": [
+            [
+              14,
+              11
+            ],
+            [
+              15,
+              14
+            ]
+          ]
+        },
+        "icon-allow-overlap": false,
+        "icon-optional": false,
+        "text-line-height": 1.2,
+        "visibility": "visible",
+        "text-ignore-placement": false,
+        "icon-image": "camoshield6",
+        "icon-rotation-alignment": "viewport",
+        "text-rotation-alignment": "viewport",
+        "text-pitch-alignment": "viewport",
+        "symbol-spacing": 500,
+        "icon-text-fit": "width",
+        "icon-text-fit-padding": [
+          0,
+          15,
+          2,
+          15
+        ]
+      },
+      "paint": {
+        "text-color": "rgba(51, 51, 51, 1)"
       }
     }
   ],
