@@ -3,7 +3,7 @@
 <head>
   <title>Camo</title>
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ol3/3.20.1/ol.css">
+  <link rel="stylesheet" href="https://openlayers.org/en/v4.1.1/css/ol.css">
   <style>
     html, body {
       height: 100%;
@@ -46,7 +46,7 @@
   fetch('https://rawgit.com/PetersonGIS/CamoStyle/master/camo.json').then(function(response) {
     response.json().then(function(glStyle) {
       olms.applyBackground(map, glStyle);
-      olms.applyStyle(layer, glStyle, 'bonn_osm').then(function() {
+      olms.applyStyle(layer, glStyle, 'osm').then(function() {
         map.addLayer(layer);
       });
     });
