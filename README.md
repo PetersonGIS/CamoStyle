@@ -8,7 +8,6 @@ This is a map style that uses a publically available [Tegola](https://github.com
 Note that the water texture, road labels and tilt functionality are missing from this map, which displays the camo.json style.
 - [Rendered with Mapbox:](http://www.gretchenpeterson.com/live-map-mapbox.html) 
   Note that the water texture, road labels, and tilt are working in this map, which displays the camo3d.json style. Test the tilt (pitch)   functionality by holding ctrl while clicking and dragging. The building extrusions are not yet functional on mobile devices.
-- At zooms 15 and higher the data begins to appear blocky, this is due to clipping issues in the source data that are in the process of being fixed.
 - Zooms lower than 5 may crash this server. Plans to get this onto a production server are in place but it is unknown when.
 
 ## Map Design
