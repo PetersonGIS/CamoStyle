@@ -1,5 +1,5 @@
 # CamoStyle [![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
-This is a map style that uses a publically available [Tegola](https://github.com/terranodo/tegola) tileset of the world. It is currently still under development and is primarily styled using [Maputnik](https://github.com/maputnik/editor).
+This is a map style that uses a publically available [Tegola](https://github.com/terranodo/tegola) tileset of the world. It is currently still under development and is primarily styled using [Maputnik](https://maputnik.github.io/editor).
 
 <img align="right" alt="TegolaCamoStyle" src="logo.png" />
 
