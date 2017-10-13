@@ -3,7 +3,7 @@
 <head>
   <title>Camo</title>
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ol3/3.20.1/ol.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.4.1/ol.css">
   <style>
     html, body {
       height: 100%;
@@ -18,7 +18,7 @@
 <body>
   <div id="map"></div>
   <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch,Promise"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ol3/4.3.1/ol.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.4.1/ol.js"></script>
   <script src="https://rawgit.com/boundlessgeo/ol-mapbox-style/v2.6.6/dist/olms.js"></script>
   <script>
 
@@ -28,7 +28,7 @@
       format: new ol.format.MVT(),
       tileGrid: tilegrid,
       tilePixelRatio: 8,
-      url: 'https://osm.tegola.io'
+      url: 'https://osm.tegola.io/maps/osm/{z}/{x}/{y}.pbf'
     })
   });
   var map = new ol.Map({
@@ -38,7 +38,7 @@
         7.1119,
         50.7377
       ]),
-      zoom: 11.5,
+      zoom: 13,
       maxResolution: 78271.51696402048
     })
   });
@@ -54,3 +54,4 @@
 
   </script>
 </body>
+</html>
