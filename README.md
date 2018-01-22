@@ -7,15 +7,14 @@ This is a map style that uses a publically available [Tegola](https://github.com
 - [Rendered with OpenLayers:](http://htmlpreview.github.io/?https://github.com/PetersonGIS/CamoStyle/blob/master/live-map.html)
 Note that the water texture, road labels and tilt functionality are missing from this map, which displays the camo.json style.
 - [Rendered with Mapbox:](http://www.gretchenpeterson.com/live-map-mapbox.html) 
-  Note that the water texture, road labels, and tilt are working in this map, which displays the camo3d.json style. Test the tilt (pitch)   functionality by holding ctrl while clicking and dragging. The building extrusions are not yet functional on mobile devices.
-- Zooms lower than 5 may crash this server. Plans to get this onto a production server are in place but it is unknown when.
+This map displays the camo3d.json style. Test the tilt (pitch) functionality by holding ctrl while clicking and dragging on a desktop. 
 
 ## Map Design
 
-The CamoStyle basemap has a subdued color scheme to accomodate data overlays while being unique from other light basemap designs. Use camo.json for OpenLayers or mobile and camo3d.json for Mapbox implementations. Use either camo.json or camo3d.json in Maputnik as a way of getting started with building your own style with the available Tegola layers. See [tegola-osm](https://github.com/terranodo/tegola-osm) for a list of available layers.
+The CamoStyle basemap has a subdued color scheme to accomodate data overlays while being unique from other light basemap designs. Use camo.json for OpenLayers and camo3d.json for Mapbox implementations. These two json files use some of the newest Mapbox GL JS styling options and therefore aren't functional in Maputnik. To use these styles as springboards for your own styles, then, it is currently recommended to hand edit the json. 
+
+Note that camo.json and camo3d.json use data extracted from OSM and Natural Earth Data and hosted using Tegola. See [tegola-osm](https://github.com/terranodo/tegola-osm) for a list of available layers in this vector tileset. You may want to explore using other open tilesets as well.
 
 [![Camo.json map demo in a mapbox renderer](demo.gif)](http://www.gretchenpeterson.com/live-map-mapbox.html#14.66/50.7173/7.1318/-52/60)
 
-## Editing this style in Maputnik
-
-Editing this style to create your own style.json file is fairly straightforward. Point your browser to Maputnik at  [https://maputnik.github.io/editor](https://maputnik.github.io/editor), click Open > Upload and point to either camo.json or camo3d.json, which you have saved locally. Change the style to suit you, then go to Export > Download to save your newly re-styled json file locally. This can then be used in a renderer like OpenLayers or Mapbox for browser display. Note that camo.json and camo3d.json use data extracted from OSM and Natural Earth Data and hosted using Tegola. You may want to explore using other open tilesets as well.
+ 
