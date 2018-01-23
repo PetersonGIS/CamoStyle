@@ -3,7 +3,7 @@
 <head>
   <title>Camo</title>
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
-  <link rel="stylesheet" href="https://openlayers.org/en/v4.6.2/css/ol.css">
+  <link rel="stylesheet" href="https://openlayers.org/en/v4.6.4/css/ol.css">
   <style>
     html, body {
       height: 100%;
@@ -18,39 +18,11 @@
 <body>
   <div id="map"></div>
   <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch,Promise"></script>
-  <script src="https://openlayers.org/en/v4.6.2/build/ol.js"></script>
-  <script src="https://rawgit.com/boundlessgeo/ol-mapbox-style/v2.6.6/dist/olms.js"></script>
+  <script src="https://openlayers.org/en/v4.6.4/build/ol.js"></script>
+  <script src="https://rawgit.com/boundlessgeo/ol-mapbox-style/v2.10.1/dist/olms.js"></script>
   <script>
 
-  var tilegrid = ol.tilegrid.createXYZ({tileSize: 512, maxZoom: 22});
-  var layer = new ol.layer.VectorTile({
-    source: new ol.source.VectorTile({
-      format: new ol.format.MVT(),
-      tileGrid: tilegrid,
-      tilePixelRatio: 8,
-      url: 'https://osm.tegola.io/capabilities/osm.json'
-    })
-  });
-  var map = new ol.Map({
-    target: 'map',
-    view: new ol.View({
-      center: ol.proj.fromLonLat([
-        7.1119,
-        50.7377
-      ]),
-      zoom: 13,
-      maxResolution: 78271.51696402048
-    })
-  });
-
-  fetch('https://rawgit.com/PetersonGIS/CamoStyle/master/camo.json').then(function(response) {
-    response.json().then(function(glStyle) {
-      olms.applyBackground(map, glStyle);
-      olms.applyStyle(layer, glStyle, 'tegola-osm').then(function() {
-        map.addLayer(layer);
-      });
-    });
-  });
+  olms.apply('map', 'https://rawgit.com/PetersonGIS/CamoStyle/master/camo3d.json');
 
   </script>
 </body>
