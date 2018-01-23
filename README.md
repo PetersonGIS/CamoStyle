@@ -4,7 +4,7 @@ This is a map style that uses a publically available [Tegola](https://github.com
 <img align="right" alt="TegolaCamoStyle" src="logo.png" />
 
 ## Viewing the map in the browser
-- [Rendered with OpenLayers:](http://htmlpreview.github.io/?https://github.com/PetersonGIS/CamoStyle/blob/master/live-map.html)
+- [Rendered with OpenLayers:](https://htmlpreview.github.io/?https://github.com/PetersonGIS/CamoStyle/blob/master/live-map.html)
 Note that the water texture, road labels and tilt functionality are missing from this map, which displays the camo.json style.
 - [Rendered with Mapbox:](http://www.gretchenpeterson.com/live-map-mapbox.html) 
 This map displays the camo3d.json style. Test the tilt (pitch) functionality by holding ctrl while clicking and dragging on a desktop. 
