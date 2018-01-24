@@ -11,7 +11,7 @@ This map displays the camo3d.json style. Test the tilt (pitch) functionality by 
 
 ## Map Design
 
-The amo basemap has a subdued color scheme to accomodate data overlays and is unique from other light basemap designs. Use camo.json for OpenLayers implementations and camo3d.json for Mapbox implementations. To use these styles as springboards for your own styles it is currently recommended to use the version of Maputnik found [here](https://justenpalmer.github.io/editor) or to hand edit the json. 
+The camo basemap has a subdued color scheme to accomodate data overlays and is unique from other light basemap designs. Use camo.json for OpenLayers implementations and camo3d.json for Mapbox implementations. To use these styles as springboards for your own styles it is currently recommended to use the version of Maputnik found [here](https://justenpalmer.github.io/editor) or to hand edit the json. 
 
 Note that camo.json and camo3d.json use data extracted from OSM and Natural Earth Data and hosted using Tegola. See [tegola-osm](https://github.com/terranodo/tegola-osm) for a list of available layers in this vector tileset. You may want to explore using other open tilesets or hosting your own as this tileset is for demonstration purposes only.
 
