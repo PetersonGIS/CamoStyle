@@ -1034,7 +1034,7 @@
     {
       "id": "buildings_2d",
       "type": "fill",
-      "source": "tegola-osm",
+      "source": "osm",
       "source-layer": "buildings",
       "minzoom": 0,
       "filter": [
