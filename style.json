@@ -39,7 +39,7 @@
       }
     },
     {
-      "id": "land",
+      "id": "osm.land.Polygon",
       "type": "fill",
       "source": "osm",
       "source-layer": "land",
