@@ -50,98 +50,26 @@
         "fill-color": "rgba(98, 117, 98, 1)"
       }
     },
-	{
-      "id": "pier",
+	
+    {
+      "id": "buildings_2d",
       "type": "fill",
       "source": "osm",
-      "source-layer": "other_areas",
+      "source-layer": "buildings",
+      "minzoom": 0,
       "filter": [
-        "all",
-        [
-          "==",
-          "type",
-          "pier"
-        ]
+        "all"
       ],
       "layout": {
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "rgba(98, 117, 98, 1)"
-      }
-    },
-    
-    {
-      "id": "water_lines",
-      "type": "line",
-      "source": "osm",
-      "source-layer": "water_lines",
-      "minzoom": 8,
-      "maxzoom": 20,
-      "layout": {},
-      "paint": {
-        "line-color": "rgba(69, 86, 71, .5)"
-      }
-    },
-    {
-      "id": "water_areas",
-      "type": "fill",
-      "source": "osm",
-      "source-layer": "water_areas",
-      "minzoom": 3,
-      "maxzoom": 20,
-      "paint": {
-        "fill-color": "rgba(69, 86, 71, .5)",
-        "fill-pattern": "waves",
+        "fill-color": "rgba(58, 58, 33, 0.3)",
+        "fill-outline-color": "rgba(105, 105, 80, 0.51)",
         "fill-opacity": 1
       }
-    },
-	{
-      "id": "state_lines_z10",
-      "type": "line",
-      "source": "osm",
-      "source-layer": "admin_lines",
-      "minzoom": 10,
-      "maxzoom": 20,
-	  "filter": [
-        "all",
-        [
-          "==",
-          "admin_level",
-          4
-        ]
-	  ],
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "line-color": "rgba(178, 171, 171, 0.5)",
-		"line-dasharray": [
-          6,
-          3
-        ]
-      }
-    },
-	{
-      "id": "state_lines_z2",
-      "type": "line",
-      "source": "osm",
-      "source-layer": "state_lines",
-      "minzoom": 2,
-      "maxzoom": 10,
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "line-color": "rgba(178, 171, 171, 0.5)",
-		"line-dasharray": [
-          6,
-          3
-        ]
-      }
     }
-    
-    
+
   ],
   "created": "2017-01-04T21:12:33.904Z",
   "id": "f0usgx9v5",
