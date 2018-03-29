@@ -52,7 +52,7 @@
     },
 	
     {
-      "id": "buildings_2d",
+      "id": "buildings",
       "type": "fill",
       "source": "osm",
       "source-layer": "buildings",
