@@ -18,7 +18,7 @@
   "sources": {
     "osm": {
       "type": "vector",
-      "url": "https://osm.tegola.io/capabilities/osm.json"
+      "url": "https://tegola-osm-demo.go-spatial.org/v1/capabilities/osm.json"
     }
   },
   "sprite": "https://petersongis.github.io/Mobility/osm_tegola_spritesheet3",
@@ -50,7 +50,7 @@
         "fill-color": "rgba(98, 117, 98, 1)"
       }
     },
-	{
+    {
       "id": "pier",
       "type": "fill",
       "source": "osm",
@@ -81,7 +81,7 @@
         "fill-color": {
           "property": "type",
           "type": "categorical",
-      "default": "transparent",
+          "default": "transparent",
           "stops": [
             [
               "farmland",
@@ -190,7 +190,7 @@
         "fill-color": {
           "property": "type",
           "type": "categorical",
-      "default": "transparent",
+          "default": "transparent",
           "stops": [
             [
               "park",
@@ -292,7 +292,7 @@
         "fill-color": "rgba(100, 179, 100, 0.09)"
       }
     },
-	{
+    {
       "id": "landuse_areas_military_overlay",
       "type": "fill",
       "source": "osm",
@@ -312,7 +312,7 @@
       },
       "paint": {
         "fill-color": "rgba(178, 194, 157, 1)",
-		"fill-pattern": "military-fill3"
+        "fill-pattern": "military-fill3"
       }
     },
     {
@@ -340,7 +340,7 @@
         "fill-opacity": 1
       }
     },
-	{
+    {
       "id": "pier_line",
       "type": "line",
       "source": "osm",
@@ -373,33 +373,33 @@
         }
       }
     },
-	{					
+    {
       "id": "state_lines_z10",
       "type": "line",
       "source": "osm",
       "source-layer": "admin_lines",
       "minzoom": 10,
       "maxzoom": 20,
-	  "filter": [
+      "filter": [
         "all",
         [
           "==",
           "admin_level",
           4
         ]
-	  ],
+      ],
       "layout": {
         "visibility": "visible"
       },
       "paint": {
         "line-color": "rgba(178, 171, 171, 0.5)",
-		"line-dasharray": [
+        "line-dasharray": [
           6,
           3
         ]
       }
     },
-	{
+    {
       "id": "state_lines_z2",
       "type": "line",
       "source": "osm",
@@ -411,7 +411,7 @@
       },
       "paint": {
         "line-color": "rgba(178, 171, 171, 0.5)",
-		"line-dasharray": [
+        "line-dasharray": [
           6,
           3
         ]
@@ -735,7 +735,7 @@
         [
           "in",
           "type",
-		  "motorway",
+          "motorway",
           "trunk"
         ]
       ],
@@ -813,7 +813,7 @@
           "in",
           "type",
           "trunk",
-		  "primary"
+          "primary"
         ]
       ],
       "layout": {
@@ -848,7 +848,7 @@
           "in",
           "type",
           "trunk",
-		  "primary"
+          "primary"
         ]
       ],
       "layout": {
@@ -870,7 +870,7 @@
         }
       }
     },
-	{
+    {
       "id": "roads_motorway_z4",
       "type": "line",
       "source": "osm",
@@ -880,7 +880,7 @@
       "layout": {
         "visibility": "visible"
       },
-	  "paint": {
+      "paint": {
         "line-color": "rgba(119, 135, 119, 1)",
         "line-width": {
           "stops": [
@@ -996,37 +996,38 @@
         "text-color": "rgba(45, 41, 32, 1)"
       }
     },
-     {
+    {
       "id": "admin_countrylines_z10",
       "type": "line",
       "source": "osm",
       "source-layer": "admin_lines",
       "minzoom": 10,
       "maxzoom": 20,
-	  "filter": [
+      "filter": [
         "all",
         [
           "==",
           "admin_level",
           2
         ]
-	  ],
+      ],
       "layout": {
         "visibility": "visible"
       },
       "paint": {
         "line-color": "rgba(106, 95, 78, 1)",
-		"line-width": {
-			"stops": [
-			  [ 0,
-				1
-			  ],
-			  [
-				7,
-				1.5
-			  ]
-			]
-		}	
+        "line-width": {
+          "stops": [
+            [
+              0,
+              1
+            ],
+            [
+              7,
+              1.5
+            ]
+          ]
+        }
       }
     },
     {
@@ -1041,17 +1042,18 @@
       },
       "paint": {
         "line-color": "rgba(106, 95, 78, 1)",
-		"line-width": {
-			"stops": [
-			  [ 0,
-				1
-			  ],
-			  [
-				7,
-				1.5
-			  ]
-			]
-		}	
+        "line-width": {
+          "stops": [
+            [
+              0,
+              1
+            ],
+            [
+              7,
+              1.5
+            ]
+          ]
+        }
       }
     },
     {
@@ -1066,17 +1068,18 @@
       },
       "paint": {
         "line-color": "rgba(106, 95, 78, 1)",
-		"line-width": {
-			"stops": [
-			  [ 0,
-				1
-			  ],
-			  [
-				7,
-				1.5
-			  ]
-			]
-		},	
+        "line-width": {
+          "stops": [
+            [
+              0,
+              1
+            ],
+            [
+              7,
+              1.5
+            ]
+          ]
+        },
         "line-dasharray": [
           4,
           1
@@ -1101,45 +1104,45 @@
         "fill-opacity": 1
       }
     },
-	{
+    {
       "id": "city_labels_z14",
       "type": "symbol",
       "source": "osm",
       "source-layer": "admin_lines",
       "minzoom": 14,
       "maxzoom": 20,
-	  "filter": [
+      "filter": [
         "all",
-		[
+        [
           "==",
           "admin_level",
           8
         ]
-	  ],	
-       "layout": {
+      ],
+      "layout": {
         "text-field": "{name}",
-		"text-font": [
+        "text-font": [
           "Open Sans Regular"
         ],
-		"text-size": 10,
-		"text-transform": "uppercase",
-		"text-letter-spacing": 0.5
+        "text-size": 10,
+        "text-transform": "uppercase",
+        "text-letter-spacing": 0.5
       },
       "paint": {
         "text-color": "rgba(69, 86, 71, 1)",
         "text-halo-color": "rgba(98, 117, 98, 1)",
         "text-halo-width": 1,
-		"text-halo-blur": 1
+        "text-halo-blur": 1
       }
     },
-	{
+    {
       "id": "city_labels_z12",
       "type": "symbol",
       "source": "osm",
       "source-layer": "populated_places",
       "minzoom": 12,
       "maxzoom": 14,
-	  "filter": [
+      "filter": [
         "all",
         [
           "==",
@@ -1149,28 +1152,28 @@
       ],
       "layout": {
         "text-field": "{name}",
-		"text-font": [
+        "text-font": [
           "Open Sans Regular"
         ],
-		"text-size": 10,
-		"text-transform": "uppercase",
-		"text-letter-spacing": 0.5
+        "text-size": 10,
+        "text-transform": "uppercase",
+        "text-letter-spacing": 0.5
       },
       "paint": {
         "text-color": "rgba(69, 86, 71, 1)",
         "text-halo-color": "rgba(98, 117, 98, 1)",
         "text-halo-width": 1,
-		"text-halo-blur": 1
+        "text-halo-blur": 1
       }
     },
-	{
+    {
       "id": "city_labels_z6",
       "type": "symbol",
       "source": "osm",
       "source-layer": "populated_places",
       "minzoom": 6,
       "maxzoom": 12,
-	  "filter": [
+      "filter": [
         "all",
         [
           "==",
@@ -1180,26 +1183,26 @@
       ],
       "layout": {
         "text-field": "{name}",
-		"text-font": [
+        "text-font": [
           "Open Sans Regular"
         ],
-		"text-size": 10
+        "text-size": 10
       },
       "paint": {
         "text-color": "rgba(69, 86, 71, 1)",
         "text-halo-color": "rgba(98, 117, 98, 1)",
         "text-halo-width": 1,
-		"text-halo-blur": 1
+        "text-halo-blur": 1
       }
     },
-	{
+    {
       "id": "state_labels",
       "type": "symbol",
       "source": "osm",
       "source-layer": "state_label_points",
       "minzoom": 4,
       "maxzoom": 10,
-	  "filter": [
+      "filter": [
         "all",
         [
           "==",
@@ -1209,11 +1212,11 @@
       ],
       "layout": {
         "text-field": "{name}",
-		"text-font": [
+        "text-font": [
           "Open Sans Bold Italic"
         ],
-		"text-size": {
-		  "stops": [
+        "text-size": {
+          "stops": [
             [
               4,
               8
@@ -1223,23 +1226,23 @@
               16
             ]
           ]
-		}  
+        }
       },
       "paint": {
         "text-color": "rgba(119, 135, 119, 1)",
         "text-halo-color": "rgba(98, 117, 98, 1)",
         "text-halo-width": 1,
-		"text-halo-blur": 1
+        "text-halo-blur": 1
       }
     },
-	{
+    {
       "id": "statecapital_labels_z10",
       "type": "symbol",
       "source": "osm",
       "source-layer": "populated_places",
       "minzoom": 10,
       "maxzoom": 20,
-	  "filter": [
+      "filter": [
         "all",
         [
           "==",
@@ -1249,27 +1252,27 @@
       ],
       "layout": {
         "text-field": "{name}",
-		"text-font": [
+        "text-font": [
           "Open Sans Bold"
         ],
-		"text-size": 10,
-		"text-transform": "uppercase"
+        "text-size": 10,
+        "text-transform": "uppercase"
       },
       "paint": {
         "text-color": "rgba(69, 86, 71, 1)",
         "text-halo-color": "rgba(98, 117, 98, 1)",
         "text-halo-width": 1,
-		"text-halo-blur": 1
+        "text-halo-blur": 1
       }
     },
-	{
+    {
       "id": "statecapital_labels_z4",
       "type": "symbol",
       "source": "osm",
       "source-layer": "populated_places",
       "minzoom": 4,
       "maxzoom": 10,
-	  "filter": [
+      "filter": [
         "all",
         [
           "==",
@@ -1279,11 +1282,11 @@
       ],
       "layout": {
         "text-field": "{name}",
-		"text-font": [
+        "text-font": [
           "Open Sans Bold"
         ],
-		"text-size": {
-		  "stops": [
+        "text-size": {
+          "stops": [
             [
               4,
               7
@@ -1293,23 +1296,23 @@
               10
             ]
           ]
-		}  
+        }
       },
       "paint": {
         "text-color": "rgba(69, 86, 71, 1)",
         "text-halo-color": "rgba(98, 117, 98, 1)",
         "text-halo-width": 1,
-		"text-halo-blur": 1
+        "text-halo-blur": 1
       }
     },
-	{
+    {
       "id": "capital_labels_z10",
       "type": "symbol",
       "source": "osm",
       "source-layer": "populated_places",
       "minzoom": 10,
       "maxzoom": 20,
-	  "filter": [
+      "filter": [
         "all",
         [
           "==",
@@ -1319,27 +1322,27 @@
       ],
       "layout": {
         "text-field": "{name}",
-		"text-font": [
+        "text-font": [
           "Open Sans Bold"
         ],
-		"text-size": 11,
-		"text-transform": "uppercase"
+        "text-size": 11,
+        "text-transform": "uppercase"
       },
       "paint": {
         "text-color": "rgba(69, 86, 71, 1)",
         "text-halo-color": "rgba(98, 117, 98, 1)",
         "text-halo-width": 1,
-		"text-halo-blur": 1
+        "text-halo-blur": 1
       }
     },
-	{
+    {
       "id": "capital_labels_z3",
       "type": "symbol",
       "source": "osm",
       "source-layer": "populated_places",
       "minzoom": 3,
       "maxzoom": 10,
-	  "filter": [
+      "filter": [
         "all",
         [
           "==",
@@ -1349,11 +1352,11 @@
       ],
       "layout": {
         "text-field": "{name}",
-		"text-font": [
+        "text-font": [
           "Open Sans Bold"
         ],
-		"text-size": {
-		  "stops": [
+        "text-size": {
+          "stops": [
             [
               3,
               9
@@ -1363,23 +1366,23 @@
               11
             ]
           ]
-		}  
+        }
       },
       "paint": {
         "text-color": "rgba(69, 86, 71, 1)",
         "text-halo-color": "rgba(98, 117, 98, 1)",
         "text-halo-width": 1,
-		"text-halo-blur": 1
+        "text-halo-blur": 1
       }
     },
-	{
+    {
       "id": "country_labels",
       "type": "symbol",
       "source": "osm",
       "source-layer": "country_label_points",
       "minzoom": 3,
       "maxzoom": 7,
-	  "filter": [
+      "filter": [
         "all",
         [
           "==",
@@ -1389,11 +1392,11 @@
       ],
       "layout": {
         "text-field": "{sr_subunit}",
-		"text-font": [
+        "text-font": [
           "Open Sans Bold"
         ],
         "text-size": {
-		  "stops": [
+          "stops": [
             [
               3,
               11
@@ -1403,13 +1406,13 @@
               13
             ]
           ]
-		}  
+        }
       },
       "paint": {
         "text-color": "rgba(106, 95, 78, 1)",
         "text-halo-color": "rgba(98, 117, 98, 1)",
         "text-halo-width": 1,
-		"text-halo-blur": 5
+        "text-halo-blur": 5
       }
     },
     {
